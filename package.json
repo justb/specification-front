@@ -1,0 +1,27 @@
+{
+    "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "linters": {
+          "src/**/*.{js,jsx}": [
+            "eslint --fix",
+            "git add"
+          ],
+          "*.styl": [
+            "stylus-supremacy format --options .stylint.json -r",
+            "git add"
+          ]
+        },
+        "ignore": [
+          "src/assets/**/*"
+        ]
+      },
+      "config": {
+        "commitizen": {
+          "path": "./node_modules/cz-conventional-changelog"
+        }
+      }
+}
