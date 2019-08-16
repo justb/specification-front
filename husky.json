@@ -10,10 +10,10 @@
                 "eslint --fix",
                 "git add"
             ],
-            "src/**/*.scss": [
-                "stylelint --syntax=scss --fix",
+            "src/**/*.{scss,less,css}": [
+                "stylelint --fix",
                 "git add"
-            ]
+              ]
         },
         "ignore": [
           "src/assets/**/*"
