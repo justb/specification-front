@@ -6,10 +6,14 @@
       },
       "lint-staged": {
         "linters": {
-          "src/**/*.{js,jsx}": [
-            "eslint --fix",
-            "git add"
-          ]
+            "src/**/*.{js,jsx}": [
+                "eslint --fix",
+                "git add"
+            ],
+            "src/**/*.{scss,less,css}": [
+                "stylelint --fix",
+                "git add"
+              ]
         },
         "ignore": [
           "src/assets/**/*"
