@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['prettier/react'],
+    extends: ['prettier'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 6,

@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['eslint:recommended', 'prettier/react', 'react-app'],
+    extends: ['eslint:recommended', 'prettier', 'react-app'],
     parserOptions: {
         ecmaVersion: 6,
         sourceType: 'module',
